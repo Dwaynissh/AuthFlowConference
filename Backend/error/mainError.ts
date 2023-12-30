@@ -1,5 +1,5 @@
-import { HTTP } from "../utils/enums";
-import { iError } from "../utils/interface";
+import { HTTP } from "../Utils/Enums";
+import { iError } from "../Utils/Interfaces";
 
 export class mainError extends Error {
   public readonly name: string;

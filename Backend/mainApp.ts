@@ -1,11 +1,11 @@
 import express, { Application, NextFunction, Request, Response } from "express";
 import auth from "./router/userRouter";
 import { mainError } from "./error/mainError";
-import { HTTP } from "./utils/enums";
+import { HTTP } from "./Utils/Enums";
 import { handleError } from "./error/handleError";
 import passport from "passport";
 import Google from "passport-google-oauth20";
-import userModel from "./model/userModel";
+import userModel from "./Model/userModel";
 
 const GoogleStrategy = Google.Strategy;
 export const mainApp = (app: Application) => {
