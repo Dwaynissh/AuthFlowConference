@@ -261,8 +261,8 @@ export const changePassword = async (req: any, res: Response) => {
             { new: true }
           );
         }
-        const newS = await passwordModel.create({ password });
-        checker?.allpasswords.push(new Types.ObjectId(newS._id));
+        // const newS = await passwordModel.create({ password });
+        // checker?.allpasswords.push(new Types.ObjectId(newS._id));
         checker.save();
         return res.status(HTTP.OK).json({
           message: "Your password has been changed",
