@@ -5,6 +5,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import userModel from "../Model/userModel";
 import { FOOD, HTTP } from "../Utils/Enums";
+import passwordModel from "../Model/passwordModel";
 import { sendEmail, sendResetPasswordEmail } from "../Utils/Email";
 import { Types } from "mongoose";
 export const createClient = async (req: Request, res: Response) => {
