@@ -1,5 +1,5 @@
 import express, { Application, NextFunction, Request, Response } from "express";
-import auth from "./router/userRouter";
+import auth from "./Router/userRouter";
 import { mainError } from "./error/mainError";
 import { HTTP } from "./Utils/Enums";
 import { handleError } from "./error/handleError";
