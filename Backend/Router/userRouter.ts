@@ -10,7 +10,7 @@ import {
   resetPassWord,
   signinAll,
   verifyAll,
-} from "../controller/userController";
+} from "../Controller/usercontroller";
 
 const router: Router = Router();
 
