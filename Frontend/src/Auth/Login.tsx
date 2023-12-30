@@ -2,9 +2,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { Form, useNavigate } from "react-router-dom";
 import * as yup from "yup";
-import { SigninAccount } from "../../../api/api";
 import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
+import { SigninAccount } from "../Api/Api";
 
 const Login = () => {
   const navigate = useNavigate();
